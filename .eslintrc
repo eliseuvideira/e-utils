@@ -1,0 +1,43 @@
+{
+  "env": {
+    "es2024": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ClassDeclaration",
+        "message": "Classes are not allowed. Use object literals, functions, and closures instead."
+      },
+      {
+        "selector": "ClassExpression",
+        "message": "Class expressions are not allowed. Use object literals, functions, and closures instead."
+      },
+      {
+        "selector": "TSInterfaceDeclaration",
+        "message": "Interfaces are not allowed. Define types with the 'type' keyword for consistency."
+      },
+      {
+        "selector": "TSEnumDeclaration",
+        "message": "Enums are not allowed. Use union of string literals instead."
+      }
+    ]
+  }
+}
