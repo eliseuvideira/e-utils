@@ -5,5 +5,5 @@ import { Response } from "./Response";
 export type RequestHandler = (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => Promise<void>;

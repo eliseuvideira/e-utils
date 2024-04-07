@@ -73,6 +73,6 @@ describe("isHttpError", () => {
     "should return false for other types of errors ($type)",
     ({ value, expected }) => {
       expect(isHttpError(value)).toBe(expected);
-    }
+    },
   );
 });
