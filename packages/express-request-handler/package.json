@@ -13,7 +13,8 @@
   "repository": "git@github.com:eliseuvideira/e-utils.git",
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "prepublishOnly": "rm -rf lib && yarn build"
+    "prepublishOnly": "rm -rf lib && pnpm build",
+    "publish": "pnpm public --access public"
   },
   "keywords": [
     "async",
