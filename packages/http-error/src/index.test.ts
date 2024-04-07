@@ -1,5 +1,5 @@
-import { isHttpError } from "./src/functions/is-http-error";
-import { HttpError } from "./src/utils/http-error";
+import { isHttpError } from "./functions/is-http-error";
+import { HttpError } from "./utils/http-error";
 
 describe("isHttpError", () => {
   it("should return true if the input is an HttpError object", () => {
