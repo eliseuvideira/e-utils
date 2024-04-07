@@ -49,9 +49,7 @@ describe("HttpError", () => {
   });
 
   it("should have a cause property", () => {
-    const cause = new Error("Something went wrong.", {
-      cause: new Error("", { cause: new Error() }),
-    });
+    const cause = new Error("Something went wrong.");
     const error = new HttpError({
       message: "Internal server error.",
       status: 500,

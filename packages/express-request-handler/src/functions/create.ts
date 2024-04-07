@@ -1,5 +1,5 @@
-import { ExpressRequestHandler } from "../types/ExpressRequestHandler";
-import { RequestHandler } from "../types/RequestHandler";
+import { ExpressRequestHandler } from "../types/express-request-handler";
+import { RequestHandler } from "../types/request-handler";
 
 export const create =
   (handler: RequestHandler): ExpressRequestHandler =>
