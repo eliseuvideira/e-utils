@@ -1,8 +1,10 @@
 import { ZodError, ZodType, ZodTypeDef } from "zod";
 import { fromZodError } from "zod-validation-error";
 import { HttpError } from "@e-utils/http-error";
-import { Handler } from "@e-utils/express-request-handler";
-import { ExpressRequestHandler } from "@e-utils/express-request-handler/lib/types/express-request-handler";
+import {
+  ExpressRequestHandler,
+  Handler,
+} from "@e-utils/express-request-handler";
 
 export type CreateValidatorProps<
   T extends ZodType<unknown, ZodTypeDef, unknown>,
@@ -17,7 +19,7 @@ export const createValidator = <
   key,
   schema,
 }: CreateValidatorProps<T>): ExpressRequestHandler =>
-  Handler.create(async (req, res, next) => {
+  Handler.create(async (req, _res, next) => {
     try {
       const result = schema.parse(req[key]);
 
