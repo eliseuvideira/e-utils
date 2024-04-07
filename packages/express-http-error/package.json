@@ -1,0 +1,27 @@
+{
+  "name": "@e-utils/express-http-error",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "repository": "git@github.com:eliseuvideira/e-utils.git",
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "prepublishOnly": "rm -rf lib && yarn build"
+  },
+  "keywords": [
+    "error",
+    "express",
+    "http"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "typescript": "^5.4.3"
+  }
+}

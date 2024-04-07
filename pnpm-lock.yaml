@@ -33,6 +33,15 @@ importers:
         specifier: ^5.4.3
         version: 5.4.4
 
+  packages/express-http-error:
+    devDependencies:
+      '@types/node':
+        specifier: ^20.12.2
+        version: 20.12.5
+      typescript:
+        specifier: ^5.4.3
+        version: 5.4.4
+
   packages/express-request-handler:
     devDependencies:
       '@types/express':
