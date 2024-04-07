@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ClassExpression",
+        "message": "Class expressions are not allowed. Use object literals, functions, and closures instead."
+      },
+      {
+        "selector": "TSInterfaceDeclaration",
+        "message": "Interfaces are not allowed. Define types with the 'type' keyword for consistency."
+      },
+      {
+        "selector": "TSEnumDeclaration",
+        "message": "Enums are not allowed. Use union of string literals instead."
+      }
+    ]
+  }
+}

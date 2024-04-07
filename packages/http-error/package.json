@@ -1,5 +1,5 @@
 {
-  "name": "@e-utils/express-http-error",
+  "name": "@e-utils/http-error",
   "version": "0.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
