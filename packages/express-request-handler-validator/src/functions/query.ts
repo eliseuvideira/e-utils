@@ -1,12 +1,12 @@
 import { ExpressRequestHandler } from "@e-utils/express-request-handler";
 import { createValidator } from "./create-validator";
-import { ZodSchema } from "../types/zod-schema";
 import { ValidatorProps } from "../types/validator-props";
+import { ZodSchema } from "../types/zod-schema";
 
-export const params = <T extends ZodSchema>({
+export const query = <T extends ZodSchema>({
   schema,
 }: ValidatorProps<T>): ExpressRequestHandler =>
   createValidator({
-    key: "params",
+    key: "query",
     schema,
   });
