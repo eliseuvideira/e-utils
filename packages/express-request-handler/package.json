@@ -13,8 +13,7 @@
   "repository": "git@github.com:eliseuvideira/e-utils.git",
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "prepublishOnly": "rm -rf lib && pnpm build",
-    "publish": "pnpm public --access public"
+    "prepublishOnly": "rm -rf lib && pnpm build"
   },
   "keywords": [
     "async",
@@ -34,5 +33,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "gitHead": "97a84cc8816e6f9a55cbfa7697ad0075026da9a6"
 }
