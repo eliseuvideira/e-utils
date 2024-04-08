@@ -1,11 +1,5 @@
-import { query } from "express";
-import { body } from "./functions/body";
-import { params } from "./functions/params";
+import { create } from "./functions/create";
 
 export const Validator = {
-  body,
-  query,
-  params,
+  create,
 };
-
-export { ValidatorProps } from "./types/validator-props";
